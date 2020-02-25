@@ -52,8 +52,6 @@
     }).addTo(mymap);
     L.control.zoom({ position: 'bottomright' }).addTo(mymap);
 
-    var marker_cluster = L.markerClusterGroup({maxClusterRadius:50});
-
     function getJson(url) {
         return new Promise((resolve, reject) => {
             const xhr = new XMLHttpRequest();
